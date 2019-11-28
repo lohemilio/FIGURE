@@ -71,7 +71,7 @@ def p_mainFI(p):
 
 def p_mainF_sign(p):
     '''
-    mainF_sign : MULT
+    mainF_sign : MAINF
     '''
     beginMainF = len(interCode.Quads) + 1
     interCode.PJumps.append(beginMainF)

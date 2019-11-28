@@ -43,7 +43,8 @@ keywords = {
     'pointer_size': 'POINTER_SIZE',
     'start_f': 'START_F',
     'end_f': 'END_F',
-    'exit': 'EXIT'
+    'exit': 'EXIT',
+    'mainF': 'MAINF'
 } 
 
 # List of tokens
