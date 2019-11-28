@@ -1,0 +1,42 @@
+program binary_search;
+
+int array[6] = [5,6,4,5,8,1];
+
+fun int binSearch(int l, int r, int x){
+    
+    int middle;
+    int answer = -1;
+    
+    if(r >= l){
+
+        middle = l + (r - l) / 2;
+
+        if(array[middle] == x){
+            
+            answer = middle;
+
+        } 
+        elseif(array[middle] > x) {
+
+            answer = binSearch(l, middle - 1, x);
+
+        } 
+        elseif(array[middle] < x) {
+            answer = binSearch(middle + 1, r, x);
+        }
+    }
+
+    return answer;
+}
+
+mainF {
+    int x = 4;
+    int len = 6;
+    int result = binSearch(0, len - 1, x);
+
+    if(result != -1){
+        print("I found it");
+    } else {
+        print("Not in the list");
+    }
+}

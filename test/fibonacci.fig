@@ -1,0 +1,26 @@
+program fibonacci;
+
+int n = 10;
+int next;
+int t1 = 0;
+int t2 = 1;
+int i = 0;
+string res;
+
+* {
+    while(i < n){
+        if(i <= 0)
+        {
+            next = i;
+        } 
+        else {
+            next = t1 + t2;
+            t1 = t2;
+            t2 = next;
+        }
+        i = i + 1;
+    }  
+
+    res = "Fibonacci de " + n + " es: " + next;
+    print(res);
+}

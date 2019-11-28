@@ -1,0 +1,33 @@
+program bubble_sort;
+
+int array[6] = [6,4,3,5,1,7];
+
+fun void bubSort(int t){
+    
+    int i = 0;
+    int j;
+    int t1;
+    int t2;
+    while(i < t){
+        j = 0;
+        while(j < t - 1){
+            if(array[j+1] < array[j]){
+                
+                t1 = array[j];
+                t2 = array[j+1];
+
+                array[j] = t2;
+                array[j+1] = t1;
+            }
+
+            j = j + 1;
+        }
+
+        i = i + 1;
+    }
+}
+
+mainF {
+    int size = 6;
+    bubSort(size);
+}

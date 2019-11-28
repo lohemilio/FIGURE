@@ -1,0 +1,23 @@
+program circles;
+
+string colors[10] = ["Red","Blue","Yellow"];
+
+
+mainF{
+    int i = 1;
+    int pos;
+    pointer_size(3);
+    speed("fast");
+
+    for(i:5){
+        pointer_color(colors[i]);
+        circle(i*40);
+        up;
+        pos = -1 * i;
+        pos = pos * 10;
+        position(0,pos);
+        down;
+    }
+
+    exit;
+}

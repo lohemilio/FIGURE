@@ -379,7 +379,7 @@ class IntermediateCode:
         temp = Quadruple('+',auxmdim,r,sumaux)
         self.Quads.append(temp)
 
-        # Quadruples para + T BASE T
+        # Quadruples for + T BASE T
         sumabase = self.memoryDirection('local','int')
         q_sumabase = Quadruple('+',sumaux, base, sumabase)
         self.Quads.append(q_sumabase)

@@ -96,7 +96,6 @@ def t_CTE_FLOAT(t):
     return t
 
 def t_CTE_STRING(t):
-    # r'"[a-zA-Z][a-zA-Z_0-9]*"'
     r'\"(\\.|[^"\\])*\"'
     t.value = str(t.value)
     return t

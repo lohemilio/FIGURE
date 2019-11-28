@@ -1,0 +1,18 @@
+program squares;
+
+int i = 100;
+int j = 0;
+string color[3] = ["red","orange","green"];
+
+mainF {
+
+    for(j:3){
+        right(40);
+        pointer_color(color[j]);
+        start_f;
+        square(200-j*10);
+        end_f;  
+    }
+
+    exit;
+}
