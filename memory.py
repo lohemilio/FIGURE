@@ -41,7 +41,7 @@ class Memory:
             else:
                 self.active = None
             fun = list(self.mem_exec.keys())[-1]
-            self.counter -= self.mem_exec[fun].tam
+            self.counter -= self.mem_exec[fun].size
             del self.mem_exec[fun]
 
 
