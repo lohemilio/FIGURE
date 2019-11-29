@@ -1,15 +1,15 @@
 program circles;
 
-string colors[10] = ["Thistle","Medium Purple","Purple","Blue Violet","Dark Violet","Dark Orchid","Medium Orchid","Orchid","Plum","Violet"];
+string colors[3] = ["Blue","Yellow","Green"];
 
 
 mainF{
     int i = 1;
-    int pos;
+    int pos = 5;
     pointer_size(3);
     speed("fast");
 
-    for(i:10){
+    for(i:3){
         pointer_color(colors[i]);
         circle(i*40);
         up;

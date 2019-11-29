@@ -2,11 +2,11 @@ program squares;
 
 int i = 100;
 int j = 0;
-string color[3] = ["red","orange","green"];
+string color[6] = ["Green","Red","Black","Green","Red","Black"];
 
 mainF {
 
-    for(j:3){
+    for(j:6){
         right(40);
         pointer_color(color[j]);
         start_f;

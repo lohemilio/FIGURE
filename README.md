@@ -11,7 +11,7 @@ Compilers Project
 
 For compiling and executing you need to type the next command in terminal:
 
-- `$ python3 execute.py <your_file_name.fig> `
+- `$ python3 main.py <your_file_name.fig> `
 
 ### Getting Started
 You have three data types in FIGURE:
@@ -42,7 +42,7 @@ FIGURE allows you to create diverse shapes like circles or squares. You could tr
 ```
 program circles;
 
-string colors[10] = ["Red","Blue","Yellow"];
+string colors[3] = ["Red","Blue","Yellow"];
 
 
 mainF{
@@ -51,7 +51,7 @@ mainF{
     pointer_size(3);
     speed("fast");
 
-    for(i:5){
+    for(i:3){
         pointer_color(colors[i]);
         circle(i*40);
         up;
