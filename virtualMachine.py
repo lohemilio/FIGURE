@@ -28,7 +28,7 @@ class VirtualMachine:
     ## This function receives quadruple files and the function and constants directory
     ## program -> name of the compiled program
     def getData(self,program):
-        compilado = f"test/{program}_compiled.fig"
+        compilado = f"test/{program}_compiled.fi"
         arch_compilado = open(compilado, 'r')
         todito = json.load(arch_compilado)
         
