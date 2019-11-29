@@ -21,7 +21,7 @@ def genFile(program,varst,quads,consts):
         "tConstants": consts
     }
 
-    with open(f'test/{program}_compiled.fig', 'w') as newFile:
+    with open(f'test/{program}_compiled.fi', 'w') as newFile:
         json.dump(compFile,newFile, separators = (',',':'))
 
 

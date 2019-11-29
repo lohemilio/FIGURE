@@ -18,7 +18,7 @@ from intermediateCode import IntermediateCode
 varsTable = VarTable()
 codeGeneration = IntermediateCode()
 
-if __name__ == '__execute__':
+if __name__ == '__main__':
     
     args = sys.argv[1:]
     fileName = args[0] 
