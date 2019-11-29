@@ -35,7 +35,7 @@ class VirtualMachine:
         self.contextStack.append('mainF')
         self.programa = program
 
-        self.haz_constantes(todito['tConstantes'])
+        self.haz_constants(todito['tConstants'])
         self.haz_quads(todito['Quads'],todito['FunDir'])
 
     ## This function process each quad until finds END
@@ -429,7 +429,7 @@ class VirtualMachine:
     ## b [36000 - 40999]
     ## CONSTANTS
     ## c [41000 - 51999]           
-    def haz_constantes(self, t):
+    def haz_constants(self, t):
         for const in t:
             dir = const[0]
             val = const[1]

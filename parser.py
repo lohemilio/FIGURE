@@ -29,10 +29,10 @@ def p_program(p):
     varsTable.deleteVar('global')
     
     f_quads = interCode.formatQuads()
-    f_constantes = interCode.formatConstants()
+    f_constants = interCode.formatConstants()
 
     # Generates compiled file
-    compilerResult.genFile(p[2],varsTable.table, f_quads, f_constantes)
+    compilerResult.genFile(p[2],varsTable.table, f_quads, f_constants)
 
 def p_program_fun(p):
     '''
